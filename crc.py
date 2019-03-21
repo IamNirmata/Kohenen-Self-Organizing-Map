@@ -136,7 +136,7 @@ def train(ip,op,epoch,w,lmbda):
 
 if __name__=='__main__':
     ip=2
-    op=100
+    op=200
     epoch=100000
     lmbda=.1
     q=0
