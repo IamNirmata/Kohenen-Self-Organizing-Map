@@ -138,7 +138,7 @@ if __name__=='__main__':
     ip=2
     op=200
     epoch=10000
-    lmbda=.1
+    lmbda=.05
     q=0
 
     kn=kn()
