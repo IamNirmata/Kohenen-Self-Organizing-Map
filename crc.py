@@ -103,11 +103,12 @@ class kn():
     def draw(self,w,pick):
         p=[]
         q=[]
+        fig.clear()
         for i in pick:
             p.append(float(w[i][0]))
             q.append(float(w[i][1]))
         #print(p,q)
-        fig = plt.figure()
+        #fig = plt.figure()
         #plt.clf()
         plt.scatter(p,q,label='kohenen',color='k',s=30,marker="x")
         plt.xlim(0,500)
@@ -134,6 +135,8 @@ def train(ip,op,epoch,w,lmbda):
             kn.draw(w,pick)
     return w,pick
 
+
+fig = plt.figure()
 if __name__=='__main__':
     ip=2
     op=200
